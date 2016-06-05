@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>train</title>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" type="text/css" href="train.css">
+	<script type="text/javascript" src = "jquery.js"></script>
+	<script type="text/javascript" src = "train.js"></script>
+</head>
+<body>
+    <div class="select">
+    	<p class="title">查询框</p>
+    	<div class="inputbegin">
+    	    <p class="pointbegin">始发地</p>
+    		<input type="text" id="inputbegin" placeholder = "请输入出发地"  onmouseover="showbegin()" onmouseout="disappearbegin()" >
+    	</div>
+    	<div class="inputend">
+    	    <p class="pointend">终止地</p>
+    		<input type="text" id="inputend" placeholder = "请输入终止地" onmouseover="showend()" onmouseout="disappearend()" >
+    	</div>
+    	<div id="popularbegin" onmouseover="showbegin()" onmouseout="disappearbegin()" >
+    		<table>
+	    	   <tr>
+	    	   	  <td>北京</td>
+	    	   	  <td>上海</td>
+	    	   	  <td>杭州</td>
+	    	   	  <td>广州</td>
+	    	   	  <td>南京</td>
+	    	   	  <td>武汉</td>
+	    	   </tr>
+	    	   <tr>
+	    	   	  <td>郑州</td>
+	    	   	  <td>长沙</td>
+	    	   	  <td>深圳</td>
+	    	   	  <td>成都</td>
+	    	   	  <td>西安</td>
+	    	   	  <td>合肥</td>
+	    	   </tr>
+	    	   <tr>
+	    	   	  <td>重庆</td>
+	    	   	  <td>青岛</td>
+	    	   	  <td>济南</td>
+	    	   	  <td>沈阳</td>
+	    	   	  <td>哈尔滨</td>
+	    	   	  <td>天津</td>
+	    	   </tr>
+          </table>
+    	</div>
+    	<div id="popularend" onmouseover="showend()" onmouseout="disappearend()" >
+    		<table>
+	    	   <tr>
+	    	   	  <td>北京</td>
+	    	   	  <td>上海</td>
+	    	   	  <td>杭州</td>
+	    	   	  <td>广州</td>
+	    	   	  <td>南京</td>
+	    	   	  <td>武汉</td>
+	    	   </tr>
+	    	   <tr>
+	    	   	  <td>郑州</td>
+	    	   	  <td>长沙</td>
+	    	   	  <td>深圳</td>
+	    	   	  <td>成都</td>
+	    	   	  <td>西安</td>
+	    	   	  <td>合肥</td>
+	    	   </tr>
+	    	   <tr>
+	    	   	  <td>重庆</td>
+	    	   	  <td>青岛</td>
+	    	   	  <td>济南</td>
+	    	   	  <td>沈阳</td>
+	    	   	  <td>哈尔滨</td>
+	    	   	  <td>天津</td>
+	    	   </tr>
+          </table>
+    	</div>
+    	<div id="checkhighspeed">
+    		<p class="checktext">是否高铁</p>
+    		<div class="highradio">
+    			<input type="radio" id="high" name="check" checked="checked">
+    			是
+    		</div>
+    		<div class="nohighradio">
+    			<input type="radio" id="nohigh" name="check">
+    			否
+    		</div>
+    	</div>
+    	<input type="submit" value="查询" id="find" onclick="getinformation()">
+    </div>
+    <div class="result">
+        <table class="getinfor">
+        	<tr>
+        		<td><font color="#A33F98">出发站</font></td>
+        		<td><font color="#A33F98">到达站</font></td>
+        		<td><font color="#A33F98">车次</font></td>
+        		<td><font color="#A33F98">类型</font></td>
+        		<td><font color="#A33F98">出发时间</font></td>
+        		<td><font color="#A33F98">到达时间</font></td>
+        		<td><font color="#A33F98">持续时间</font></td>
+        	</tr>
+        </table>
+    </div>
+</body>
+</html>

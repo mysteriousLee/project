@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flight</title>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" type="text/css" href="flight.css">
+</head>
+<body>
+    <div class="select">
+    	<p class="title">查询框</p>
+    	<div class="inputname">
+    	    <p class="pointname">航班号</p>
+    		<input type="text" id="inputname" placeholder = "请输入航班号">
+    	</div>
+    	<div class="inputdate">
+    	    <p class="pointdate">时间</p>
+    		<input type="text" id="inputdate" placeholder = "请输入查询时间">
+    	</div>
+        <div class="calendar">
+            <table id="calendar">
+                 <tr>
+                    <td><font color="black">日</font></td>
+                    <td><font color="black">一</font></td>
+                    <td><font color="black">二</font></td>
+                    <td><font color="black">三</font></td>
+                    <td><font color="black">四</font></td>
+                    <td><font color="black">五</font></td>
+                    <td><font color="black">六</font></td>
+                </tr>
+            </table> 
+        </div>
+    	<input type="submit" value="查询" id="find">
+    </div>
+    <div class="result">
+        <table class="getinfor">
+            <tbody>
+                <tr>
+                    <td><font color="#A33F98">航班号</font></td>
+                    <td><font color="#A33F98">起飞</font></td>
+                    <td><font color="#A33F98">到达</font></td>
+                    <td><font color="#A33F98">计划起飞时间</font></td>
+                    <td><font color="#A33F98">计划到达时间</font></td>
+                    <td><font color="#A33F98">状态</font></td>
+                    <td><font color="#A33F98">登机口</font></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script type="text/javascript" src = "jquery.js"></script>
+<script type="text/javascript" src = "flight.js"></script>
+</html>
